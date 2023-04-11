@@ -1495,7 +1495,7 @@ def dump_objfile(
     objdump_flags = [disassemble_flag, "-rz"]
     format_specifier = ""
     if object_format != "":
-        format_specifier = f"-b{object_format}"
+        format_specifier = f"-b {object_format}"
         objdump_flags = [disassemble_flag, "-rz", format_specifier]
     return (
         objfile,
